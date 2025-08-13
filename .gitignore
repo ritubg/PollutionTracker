@@ -1,0 +1,29 @@
+# Maven target directory
+/target/
+
+# Node modules
+/node_modules/
+/frontend/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Java class files
+*.class
+
+# Java JAR files
+*.jar
+*.war
+*.ear
+
+# IDE specific files
+*.iml
+/.idea/
+.vscode/
+
+# Vaadin dev server
+/target/vaadin-dev-server-settings.json

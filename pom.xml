@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>weather-fetcher</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <!-- ✅ Spring Boot parent -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.3</version>
+        <relativePath/>
+    </parent>
+
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+
+    <dependencies>
+        <!-- Gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+
+        <!-- MySQL JDBC driver -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>9.4.0</version>
+        </dependency>
+
+        <!-- ✅ Vaadin + Spring Boot -->
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-spring-boot-starter</artifactId>
+            <version>24.3.7</version>
+        </dependency>
+
+        <dependency>
+    <groupId>org.apache.httpcomponents.client5</groupId>
+    <artifactId>httpclient5</artifactId>
+    <version>5.3</version>
+</dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- ✅ Spring Boot plugin -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
